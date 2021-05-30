@@ -1,7 +1,5 @@
-*{
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -msbox-sizing: border-box;
+html, body {
+    overscroll-behavior: none;
 }
 body{
    overflow-x: hidden;

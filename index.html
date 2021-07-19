@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html style="background: #ffffff;" >
+<html style="background: #ffffff;overscroll-behavior: none;" >
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale = 0.86, maximum-scale=3.0, minimum-scale=0.86">
-    <title>SCRS VIT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Soft Computing Research Society VIT, Vellore</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic">
@@ -20,13 +21,12 @@
     <link rel="stylesheet" href="assets/css/Team-Clean.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <link rel="shortcut icon" href="assets/img/scrs.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
 </head >
 
 <body id="page-top">
-    
+    <div style="overflow-x: hidden;max-width: 100%;">
     <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav" style="filter: hue-rotate(0deg);">
-        <div class="container"><img data-bss-hover-animate="pulse" class="rounded-circle" src="assets/img/scrs.png" style="width: 53px;background: skyblue;margin: 1px;margin-bottom: 1px;"><a class="navbar-brand js-scroll-trigger" data-bss-hover-animate="pulse" href="#page-top" style="filter: hue-rotate(243deg);">&nbsp;scrs</a>
+        <div class="container"><img data-bss-hover-animate="pulse" class="rounded-circle" src="assets/img/scrs.png" style="width: 53px;background: #ffffff;margin: 1px;margin-bottom: 1px;"><a class="navbar-brand js-scroll-trigger" data-bss-hover-animate="pulse" href="#page-top" style="filter: hue-rotate(243deg);">&nbsp;scrs</a>
          <button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button " aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-align-justify"></i></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto" >
@@ -34,23 +34,23 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" data-bss-hover-animate="pulse" href="#services" style="filter: hue-rotate(243deg); font-size: 18px;">Activities</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" data-bss-hover-animate="pulse" href="#board" style="filter: hue-rotate(243deg);font-size: 18px;">Team</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" data-bss-hover-animate="pulse" href="#portfolio" style="filter: hue-rotate(243deg);font-size: 18px;">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" data-bss-hover-animate="pulse" href="#winner" style="filter: hue-rotate(243deg);font-size: 18px;">Results <img src="data:image/gif;base64,R0lGODlhJgAUAMQfAM4AAN49AN7e3udaAOt7KfegAPe3O//OAP/aAP/TG//hVf/rmv/3tf/3zv//7////wDB0gDnxgCc3gCM5wBr7wAp/wAx/wVK/CRW/z2M92iQ/Zqx/8fS/97n/+/z/wAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQFCgACACwAAAAAJgAUAAAF/6AgjqNDkot5rmzbMGp5LCzTtLjgKAlDKodETMBQKIa50+JwUNwaCSZN0ODNkjpHwzGMMo3eHvBL4nJPjqJRsVg0lgdEHEGvMxFuRtvobhUPBQEFUQMDgAEBAwWKgAMJCYwKPjlaBgAABQcBAAcDlwADiJ2cBQAGNzgOD1pVlwGar56ZCJ6amJ4LNmYlejxepZuhsQCIBaWBoKJMj2wNqwx6C2vHm6Kem8aI2qAICXy5ziurC5ilxIuYd9Xmp6pYVcejnJ6XA7Sg5l+oLmOLBkCJEARKVECgIAQE/j3ytq/Em2bOHCyhE6ROtzkHfHCB1iZciTNlvEiC06RBlWVIBCeswrKkh4gHYyYRiaLgAZYVO1KgaLKiSMObOn7qSCBUZUqgLIpiCQEAIfkEBQoAAAAsAAAAACYAFAAABf8gII7jQ5Kbd65sC3CbSXaXxnKd63oZtpEaCyY34vSIOtbGYtFwAB1MpSniBC2/5KPDlYkwzKZmKrSSM6SHp6NKW3uazcZqqdjv+HplDttk4k83YBcSFFIUExYUEhITFxMUFYgYGI4WGVkuDxwYERAXFhASFhOeEIsSFaWSEU46alwdGp6jEhCkn0wTtxIRFxQQTlweXh0wPVKstosQqhDPv6fLjGGUgGt9Gxo9FBHMts6iFKGMjBCJGBpxcmwrHh4bvhfPzbsXUxW2hc8ZOG06VrpFKjWqlKeBERw9Y6IByY0xFTBk6PEo0aIJhSoQijSRkoUagUh4gAGIw7sldj4/4gGV8sc7Dn1CitjyT4QHUEI6LGGSwRiYnO68uAiCIZCHnyE5NamZZISsFCgurdAms6kILu6KtnBoFWDXEyEAADsA" class="img" width="30" height="30" style="text-align: center;"></a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" data-bss-hover-animate="pulse" href="#contact" style="filter: hue-rotate(243deg);font-size: 18px;">Contact Us</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+
     <header class="text-center text-white d-flex masthead" data-aos="zoom-out-up" style="filter: hue-rotate(0deg);background: url(&quot;assets/img/header.jpg&quot;);background-size: cover;">
         <div data-aos="zoom-out-down" id="ldiv" class="loadingdiv" style="filter: hue-rotate(10deg);"></div>
         <div class="container my-auto">
             <div class="row">
                 <div class="col-lg-10 mx-auto" style="font-size: 23px;filter: hue-rotate(243deg);">
                     <h1 class="text-uppercase" data-bss-hover-animate="pulse"><strong data-aos="fade-up">Soft computing research society</strong></h1>
-                    <hr style="width: 1000px;">
+                    <hr>
                 </div>
             </div>
-            <div class="col-lg-8 mx-auto" style="filter: hue-rotate(243deg); margin-right: ;">
-                <p data-bss-hover-animate="pulse" class="text-faded mb-5"> Soft Computing Research Society (SCRS-VIT) is an exclusive community for Artificial Intelligence and Machine Learning in VIT, Vellore</p>
+            <div class="col-lg-8 mx-auto" style="filter: hue-rotate(243deg);">
+                <p data-bss-hover-animate="pulse" class="text-faded mb-5"> Soft Computing Research Society (SCRS-VIT) is an exclusive community for Artificial Intelligence and Machine Learning in VIT, Vellore</p><a class="btn btn-primary btn-xl js-scroll-trigger" role="button" data-bss-hover-animate="pulse" href="#about">Find out More!</a>
             </div>
         </div>
     </header>
@@ -164,7 +164,7 @@
         </div>
 
     </section>
-    <section id="portfolio" class="p-0" style="filter: blur(0px) contrast(95%) hue-rotate(0deg) saturate(99%);border-color: var(--cyan); margin-top: 100px;margin-bottom: 100px;">
+    <section id="portfolio" class="p-0" style="filter: blur(0px) contrast(95%) hue-rotate(0deg) saturate(99%);border-color: var(--cyan); margin-top: 100px;">
         <div class="intro">
                 <h2 class="text-center" style="font-size: 52px; font-weight: bold;margin-bottom: 40px;padding-top: 40px;color: inherit;">Gallery</h2>
             </div>
@@ -221,48 +221,7 @@
             </div>
         </div>
     <br>
-    </section>   
- <section style="margin-top: -50px;background-color: rgb(101,81,222);">
-    <div class="intro" id="winner">
-                <h2 class="text-center" style="font-size: 52px; font-weight: bold;margin-bottom: 20px;padding-top: 20px;color: inherit;">Results!</h2>
-                <p class="text-center" style="color:white;">The Top 3 performers of ML Quizmania by SCRS. <a href=""> Click Here</a> to know your Score!</p>
-            </div>
-    <div class="card-group" style="background-color: rgb(101,81,222);">
-  <div class="card" style="background-color: rgb(101,81,222);">
-    <div class="winner-wrap">
-      <div class="border"></div>
-      <div class="medal-box"><i class="fas fa-medal"></i></div>
-      <h1>ML Quizmania by SCRS</h1>
-      <h2>Abiram</h2>
-      <div class="winner-ribbon">Second</div>
-      <div class="right-ribbon"></div>
-      <div class="left-ribbon"></div>
-    </div>
-  </div>
-  <div class="card" style="background-color: rgb(101,81,222);">
-    <div class="winner-wrap">
-      <div class="border"></div>
-      <div class="medal-box"><i class="fas fa-medal"></i></div>
-      <h1>ML Quizmania by SCRS</h1>
-      <h2>Parvathish</h2>
-      <div class="winner-ribbon">First</div>
-      <div class="right-ribbon"></div>
-      <div class="left-ribbon"></div>
-    </div>
-  </div>
-  <div class="card" style="background-color: rgb(101,81,222);">
-    <div class="winner-wrap">
-      <div class="border"></div>
-      <div class="medal-box"><i class="fas fa-medal"></i></div>
-      <h1>ML Quizmania by SCRS</h1>
-      <h2>Santosh Maurya</h2>
-      <div class="winner-ribbon">Third</div>
-      <div class="right-ribbon"></div>
-      <div class="left-ribbon"></div>
-    </div>
-  </div>
-</div>
-  </section>
+    </section>
     <section data-aos="zoom-out-down" data-aos-duration="700" id="contact" style="filter: hue-rotate(244deg);">
         <div class="container">
             <div class="row">
@@ -271,7 +230,7 @@
                     <hr class="my-4">
                     <p class="mb-5">Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
                     <section data-aos="zoom-out-down" data-aos-duration="1100" class="contact-clean" style="background: var(--gray);">
-                        <form method="post" >
+                        <form  method="POST" data-netlify="true">
                             <h2 class="text-center" data-bss-hover-animate="pulse">Contact us</h2>
                             <div class="form-group"><input class="form-control" type="text" data-bss-hover-animate="pulse" name="name" placeholder="Name"></div>
                             <div class="form-group"><input class="form-control is-invalid" type="email" data-bss-hover-animate="pulse" name="email" placeholder="Email"><!--<small class="form-text text-danger">Please enter a correct email address.</small>--></div>
@@ -290,7 +249,7 @@
     </section>
     <footer class="footer-dark">
         <div class="container">
-            <div class="row">
+            <div class="row justify-content-center align-items-center">
                 <div class="col-sm-6 col-md-3 item" data-bss-hover-animate="pulse">
                     <h3>Projects</h3>
                     <ul>
@@ -334,6 +293,8 @@
           $(".loader-wrapper").delay(1200).fadeOut("slow");
         });
     </script>
+
+</div>
 </body>
 
 </html>
